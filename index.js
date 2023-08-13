@@ -31,10 +31,10 @@ app.get('/datos', (req, res) => {
     console.log("recibido");
     res.json(datos);
 });
-app.post("/guardar", upload.single('avatar'), (req, res) => {
-
-    res.send("ok");
-});
+//app.post("/guardar", upload.single('avatar'), (req, res) => {
+//
+//    res.send("ok");
+//});
 
 const PORT = process.env.PORT || 3000;//importante que el puerto no sea fijo
 app.listen(PORT, () => {
