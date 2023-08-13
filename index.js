@@ -7,8 +7,8 @@ import * as url from 'url';
 const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 
-//import mimeTypes from 'mime-types';
-//import multer from 'multer';
+import mimeTypes from 'mime-types';
+import multer from 'multer';
 //const storage = multer.diskStorage({
 //    destination: 'uploads/',
 //    filename: function(req, file, cb){
