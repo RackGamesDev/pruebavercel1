@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>titulo</h1>
+    <div id="divv">
+
+    </div>
+    <button id="get">get</button>
+    <button id="post">post</button>
+    <script>
+        document.getElementById("divv").innerHTML = "<p>hola</p>";
+        document.getElementById("get").addEventListener("click", async (e) => {
+            let res = await fetch("http://127.0.0.1:3000/datos");
+            let fin = await res.json();
+            console.log(fin);
+        });
+        document.getElementById("post").addEventListener("click", (e) => {
+            fetch("http://127.0.0.1:3000/guardar", {method: "POST", body: "asdfasfdds"});
+        });
+    </script>
+</body>
+</html>
