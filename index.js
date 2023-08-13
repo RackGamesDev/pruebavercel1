@@ -6,8 +6,6 @@ const app = express();
 import * as url from 'url';
 const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
-import {config} from 'dotenv';
-config();
 
 import mimeTypes from 'mime-types';
 import multer from 'multer';
