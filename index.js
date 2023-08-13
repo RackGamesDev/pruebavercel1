@@ -3,21 +3,21 @@
 
 import express from 'express';
 const app = express();
-import * as url from 'url';
-const __filename = url.fileURLToPath(import.meta.url);
-const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
+//import * as url from 'url';
+//const __filename = url.fileURLToPath(import.meta.url);
+//const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 
-import mimeTypes from 'mime-types';
-import multer from 'multer';
-const storage = multer.diskStorage({
-    destination: 'uploads/',
-    filename: function(req, file, cb){
-        cb("",file.originalname + Date.now() + "." + mimeTypes.extension(file.mimetype));
-    }
-});
-const upload = multer({
-    storage: storage
-});
+//import mimeTypes from 'mime-types';
+//import multer from 'multer';
+//const storage = multer.diskStorage({
+//    destination: 'uploads/',
+//    filename: function(req, file, cb){
+//        cb("",file.originalname + Date.now() + "." + mimeTypes.extension(file.mimetype));
+//    }
+//});
+//const upload = multer({
+//    storage: storage
+//});
 let datos = {
     nombre: "yo",
     id: 0
